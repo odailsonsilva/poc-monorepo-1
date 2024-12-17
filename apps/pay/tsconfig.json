@@ -1,0 +1,28 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "extends": "tsconfig/react-library.json",
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "./src/**/*.tsx",
+    "../notes/src/components/Footer.tsx",
+    "../notes/src/components/Navbar.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2015"
+    ],
+    "baseUrl": "src",
+    "outDir": "dist"
+  }
+}
